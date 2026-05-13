@@ -1,0 +1,69 @@
+name: PRD
+description: Product / Project Requirements Document — a parent issue that will be broken into tracer-bullet sub-issues
+title: "[PRD]: "
+labels: ["prd", "roadmap"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A PRD is the **parent** issue for a multi-PR initiative. The work itself happens in sub-issues — discrete, tracer-bullet slices that each cut through schema/API/UI/tests end-to-end and ship independently. Do not write implementation steps here; those belong in the sub-issues. Aim for "what good looks like," not "how we'll get there."
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: What user problem or strategic gap does this address? Why now?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired Outcome
+      description: What does the world look like when this is done? Behavior, not implementation.
+    validations:
+      required: true
+  - type: textarea
+    id: user_stories
+    attributes:
+      label: User Stories
+      description: "As a <user> I can <action> so that <outcome>. List the 3–8 stories that matter."
+      placeholder: |
+        - As a ___ I can ___ so that ___.
+        - As a ___ I can ___ so that ___.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: PRD-level criteria — coarse, observable, testable. Sub-issues will refine these.
+      placeholder: |
+        - [ ] Criterion 1
+        - [ ] Criterion 2
+    validations:
+      required: true
+  - type: textarea
+    id: non_goals
+    attributes:
+      label: Non-Goals
+      description: What this PRD does NOT cover (avoid scope creep on every sub-issue).
+    validations:
+      required: true
+  - type: textarea
+    id: sub_issues
+    attributes:
+      label: Sub-Issues (Tracer Bullets)
+      description: Filled in after PRD breakdown. Each row is a thin vertical slice that ships independently. Mark blocking relationships explicitly.
+      placeholder: |
+        - [ ] #___ Slice 1 — <title>  [size: S/M/L]  [blocked by: none]
+        - [ ] #___ Slice 2 — <title>  [size: M]      [blocked by: #___]
+        - [ ] #___ Slice 3 — <title>  [size: L]      [blocked by: #___]
+    validations:
+      required: false
+  - type: textarea
+    id: open_questions
+    attributes:
+      label: Open Questions
+      description: Things to resolve before or during the breakdown. List or "None".
+      placeholder: None
+    validations:
+      required: false
