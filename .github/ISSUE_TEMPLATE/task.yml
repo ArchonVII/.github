@@ -1,0 +1,82 @@
+name: Task
+description: Track implementation work with explicit scope and acceptance criteria
+title: "[Task]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Create the issue before branching. If acceptance criteria are not explicit and testable, leave `Status` as `draft` and `Execution Gate` as `blocked`.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is broken, missing, or unclear?
+      placeholder: Describe the current problem.
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What concrete outcome should exist when this task is done?
+      placeholder: Describe the desired outcome.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What is explicitly in scope?
+      placeholder: |
+        - In scope item 1
+        - In scope item 2
+    validations:
+      required: true
+  - type: textarea
+    id: non_goals
+    attributes:
+      label: Non-Goals
+      description: What is explicitly out of scope?
+      placeholder: |
+        - Out of scope item 1
+        - Out of scope item 2
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: Use explicit, testable pass/fail criteria.
+      placeholder: |
+        - [ ] Criterion 1
+        - [ ] Criterion 2
+    validations:
+      required: true
+  - type: textarea
+    id: blockers
+    attributes:
+      label: Dependencies / Blockers
+      description: Note dependencies, external blockers, or say `None`.
+      placeholder: None
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      options:
+        - draft
+        - ready
+        - blocked
+        - done
+    validations:
+      required: true
+  - type: dropdown
+    id: gate
+    attributes:
+      label: Execution Gate
+      options:
+        - allowed
+        - blocked
+    validations:
+      required: true
