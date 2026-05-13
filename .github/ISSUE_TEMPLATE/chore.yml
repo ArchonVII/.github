@@ -1,0 +1,38 @@
+name: Chore
+description: Tech debt, refactor, cleanup, or maintenance work with no behavior change
+title: "[Chore]: "
+labels: ["chore"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for refactors, dependency bumps, dead-code removal, build tweaks, and similar work that does not change user-visible behavior. If behavior changes, use the Task or Feature template instead.
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Why is this worth doing? What pain does it remove or risk does it reduce?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Specific files, modules, or systems affected.
+    validations:
+      required: true
+  - type: textarea
+    id: behavior_unchanged
+    attributes:
+      label: Behavior Unchanged
+      description: How will you confirm no user-visible behavior changed? (Existing tests pass, manual smoke, etc.)
+    validations:
+      required: true
+  - type: textarea
+    id: follow_ups
+    attributes:
+      label: Follow-ups
+      description: Anything intentionally left for a later chore, or "None".
+      placeholder: None
+    validations:
+      required: false

@@ -6,13 +6,18 @@ Files in `.github/` here are picked up automatically by **any of my repos that d
 
 ## What this repo provides
 
-| File                                | Applies when a repo has no...                                 |
-| ----------------------------------- | ------------------------------------------------------------- |
-| `.github/PULL_REQUEST_TEMPLATE.md`  | own `PULL_REQUEST_TEMPLATE.md`                                |
-| `.github/ISSUE_TEMPLATE/task.yml`   | own task issue form                                           |
-| `.github/ISSUE_TEMPLATE/bug.yml`    | own bug issue form                                            |
-| `.github/ISSUE_TEMPLATE/config.yml` | own issue config (disables blank issues)                      |
-| `profile/README.md`                 | This is the profile bio shown at https://github.com/ArchonVII |
+| File                                         | Applies when a repo has no...                                 |
+| -------------------------------------------- | ------------------------------------------------------------- |
+| `.github/PULL_REQUEST_TEMPLATE.md`           | own `PULL_REQUEST_TEMPLATE.md`                                |
+| `.github/ISSUE_TEMPLATE/task.yml`            | own task issue form                                           |
+| `.github/ISSUE_TEMPLATE/bug.yml`             | own bug issue form                                            |
+| `.github/ISSUE_TEMPLATE/feature_request.yml` | own feature request form                                      |
+| `.github/ISSUE_TEMPLATE/chore.yml`           | own chore / tech-debt form                                    |
+| `.github/ISSUE_TEMPLATE/documentation.yml`   | own documentation issue form                                  |
+| `.github/ISSUE_TEMPLATE/config.yml`          | own issue config (disables blank issues)                      |
+| `.github/release.yml`                        | own release-notes generator config (categorizes PRs by label) |
+| `SECURITY.md`                                | own security policy (shows "Report a vulnerability" banner)   |
+| `profile/README.md`                          | This is the profile bio shown at https://github.com/ArchonVII |
 
 ## What this repo does NOT provide
 

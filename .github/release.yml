@@ -1,0 +1,46 @@
+# Configures `gh release create --generate-notes` (and the web UI's "Generate
+# release notes" button) to categorize merged PRs by label. This is the
+# default for any consumer repo that does not ship its own .github/release.yml.
+#
+# Categories are matched against PR labels in declaration order; a PR lands
+# in the first category it matches. PRs with no matching label fall under
+# "Other Changes."
+
+changelog:
+  exclude:
+    labels:
+      - ignore-for-release
+      - no-changelog
+  categories:
+    - title: 💥 Breaking Changes
+      labels:
+        - breaking
+        - breaking-change
+    - title: 🚀 Features
+      labels:
+        - enhancement
+        - feature
+    - title: 🐛 Bug Fixes
+      labels:
+        - bug
+        - fix
+    - title: 🔒 Security
+      labels:
+        - security
+    - title: 📚 Documentation
+      labels:
+        - documentation
+    - title: ⚙️ Performance
+      labels:
+        - performance
+    - title: ♻️ Refactor & Chore
+      labels:
+        - chore
+        - refactor
+        - dependencies
+    - title: 🧪 Tests
+      labels:
+        - tests
+    - title: Other Changes
+      labels:
+        - "*"

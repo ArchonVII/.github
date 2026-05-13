@@ -1,0 +1,39 @@
+name: Documentation
+description: Report a gap, error, or unclear section in the docs
+title: "[Docs]: "
+labels: ["documentation"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Affected Page / File
+      description: URL, repo path, or section heading.
+      placeholder: 'README.md → "Getting Started" section'
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind of Issue
+      options:
+        - Incorrect — content is wrong
+        - Missing — content does not exist
+        - Unclear — content exists but is confusing
+        - Outdated — content describes old behavior
+        - Broken link / image
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What's wrong, and what did you expect to find?
+    validations:
+      required: true
+  - type: textarea
+    id: proposed_fix
+    attributes:
+      label: Proposed Fix
+      description: Optional — concrete text or pointer to the right reference.
+    validations:
+      required: false
