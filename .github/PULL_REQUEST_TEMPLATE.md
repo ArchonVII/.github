@@ -29,6 +29,10 @@ Closes #
 - In scope:
 - Out of scope:
 
+## Changelog
+
+<!-- Fragment: .changelog/unreleased/<issue>-<slug>.md, CHANGELOG.md direct edit, no-changelog label, or N/A with reason. -->
+
 ## Verification
 
 - [ ] Lint passes
