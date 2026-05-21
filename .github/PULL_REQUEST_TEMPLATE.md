@@ -35,13 +35,43 @@ Closes #
 
 ## Verification
 
-- [ ] Lint passes
-- [ ] Tests pass
-- [ ] Manual verification documented below when applicable
-
 ### Verification Notes
 
-<!-- Record exact commands/results, screenshots, or manual smoke-test notes. -->
+<!--
+  Edit commands below to match this repo's toolchain (npm/pytest/cargo/etc).
+  This is the org-wide default; per-repo templates may override.
+-->
+
+Each checked box below must be backed by exactly one fenced `evidence` block. The PR-policy parser (warning-only in Phase 1, will hard-fail in Phase 2+) reads them.
+
+Required fields: `command`, `location` (one of `local` / `ci` / `manual`), `result`, `timestamp`. Optional: `check` (used when `location: ci` and the check-run name differs from the command).
+
+- [ ] Tests pass
+
+  ```evidence
+  command: npm test
+  location: local
+  result: 16/16 passing
+  timestamp: 2026-05-20T18:32:00Z
+  ```
+
+- [ ] CI green on this branch
+
+  ```evidence
+  command: vitest
+  location: ci
+  result: success
+  timestamp: 2026-05-20T18:39:00Z
+  ```
+
+- [ ] Visual / manual review
+
+  ```evidence
+  command: read full diff in GitHub UI
+  location: manual
+  result: no concerns
+  timestamp: 2026-05-20T18:41:00Z
+  ```
 
 ## Risks
 
