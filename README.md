@@ -24,6 +24,12 @@ Files in `.github/` here are picked up automatically by **any of my repos that d
 
 See [`STARTER.md`](STARTER.md) for the canonical document-policy guide: when to add `README.md` / `CHANGELOG.md` / `TODO.md` / `ARCHITECTURE.md` / `AGENTS.md` / ADRs / `CHANGELOG` fragments, plus a setup checklist. Pair with [`ArchonVII/github-workflows`](https://github.com/ArchonVII/github-workflows) for the workflow side and [`ArchonVII/repo-template`](https://github.com/ArchonVII/repo-template) for clone-and-go scaffolding.
 
+## Agent role and lane policy
+
+The org profile README defines the ArchonVII lifecycle roles and lane policy for agent-managed work: Project-Captain, Open-Admiral, Project-Lieutenant, Release-Admiral, Issue-Admiral, the Owner Maintenance Lane, the hard separation rule for agent-managed code/config PRs, the global soft-warning default, and the Dependabot auto-merge exception.
+
+See [`profile/README.md`](profile/README.md#roles) before starting or closing agent-managed work.
+
 ## What this repo does NOT provide
 
 - **`CODEOWNERS`** — must live in each repo's own `.github/` to be enforced; GitHub does not honor a default one here.
