@@ -1,11 +1,11 @@
 # Joseph Aguirre / ArchonVII
 
 I build simulation-heavy software, developer tooling, and local-first systems for
-messy creative work.
+complex creative work.
 
 Most of my active work is private or experimental. The public repos here are the
 infrastructure edge of that work: repo bootstrapping, shared GitHub automation,
-agent coordination tools, and a few older simulation experiments.
+agent coordination tools, and select simulation experiments.
 
 ## Current Focus
 
