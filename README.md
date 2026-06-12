@@ -18,17 +18,22 @@ Files in `.github/` here are picked up automatically by **any of my repos that d
 | `.github/ISSUE_TEMPLATE/config.yml`          | own issue config (disables blank issues)                      |
 | `.github/release.yml`                        | own release-notes generator config (categorizes PRs by label) |
 | `SECURITY.md`                                | own security policy (shows "Report a vulnerability" banner)   |
-| `profile/README.md`                          | This is the profile bio shown at https://github.com/ArchonVII |
+| `profile/README.md`                          | public profile bio shown at https://github.com/ArchonVII      |
 
 ## Starting a new repo
 
 See [`STARTER.md`](STARTER.md) for the canonical document-policy guide: when to add `README.md` / `CHANGELOG.md` / `TODO.md` / `ARCHITECTURE.md` / `AGENTS.md` / ADRs / `CHANGELOG` fragments, plus a setup checklist. Pair with [`ArchonVII/github-workflows`](https://github.com/ArchonVII/github-workflows) for the workflow side and [`ArchonVII/repo-template`](https://github.com/ArchonVII/repo-template) for clone-and-go scaffolding.
 
-## Agent role and lane policy
+## Agent workflow policy
 
-The org profile README defines the ArchonVII lifecycle roles and lane policy for agent-managed work: Project-Captain, Open-Admiral, Project-Lieutenant, Release-Admiral, Issue-Admiral, the Owner Maintenance Lane, the hard separation rule for agent-managed code/config PRs, the global soft-warning default, and the Dependabot auto-merge exception.
+The public profile README is not an agent-policy source. It should stay focused
+on the visible GitHub profile for `ArchonVII`.
 
-See [`profile/README.md`](profile/README.md#roles) before starting or closing agent-managed work.
+Agent workflow rules belong in the active `AGENTS.md` instructions, this repo's
+issue and PR templates, and the reusable workflow documentation in
+[`ArchonVII/github-workflows`](https://github.com/ArchonVII/github-workflows).
+Keep process-heavy role and lane guidance out of `profile/README.md` unless it
+is directly relevant to the public profile.
 
 ## What this repo does NOT provide
 
