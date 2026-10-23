@@ -6,15 +6,7 @@ This is the default security policy for repos under [@ArchonVII](https://github.
 
 **Do not open a public issue for security vulnerabilities.**
 
-Instead, report privately one of these ways:
-
-1. **GitHub private vulnerability reporting** — preferred. On the affected repo, go to the **Security** tab and click **Report a vulnerability**. This creates a private advisory only visible to maintainers.
-2. **Email** — `josephmaguirre@gmail.com` with `[SECURITY]` in the subject. Include:
-   - Affected repo and version / commit
-   - Reproduction steps
-   - Impact assessment
-   - Any suggested mitigation
-
+Instead, report privately through **GitHub private vulnerability reporting**. On the affected repo, go to the **Security** tab and click **Report a vulnerability**. This creates a private advisory only visible to maintainers.
 ## What to expect
 
 - I will acknowledge receipt within 7 days.
