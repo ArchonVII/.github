@@ -11,9 +11,8 @@ experiments.
 
 - Procedural simulation and data-driven worlds: galactic exploration, history
   generation, artificial life, and systems that grow from compact rules.
-- Developer and agent workflow tooling: repository setup, PR policy, issue
-  hygiene, reusable GitHub Actions, and coordination surfaces for AI-assisted
-  development.
+- Developer and agent workflow tooling: repository setup, issue hygiene, and
+  coordination surfaces for AI-assisted development.
 - Applied data and visualization experiments: basketball analysis, graphics
   prototypes, and interfaces that make complex state easier to inspect.
 
