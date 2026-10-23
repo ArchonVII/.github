@@ -2,9 +2,8 @@
   This template is the default for any repo under @ArchonVII that does not
   ship its own PULL_REQUEST_TEMPLATE.md.
 
-  If your repo opts into the shared `pr-policy` or `repo-required-gate`
-  reusable workflow from ArchonVII/github-workflows, non-draft PRs must
-  satisfy the strict PR contract:
+  If your repo runs a `pr-policy` or `repo-required-gate` check, non-draft
+  PRs must satisfy the strict PR contract:
 
     1. Conventional Commit title
     2. `## Summary`
